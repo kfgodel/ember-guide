@@ -8,6 +8,8 @@ You will need [nvm](https://github.com/creationix/nvm)
 > nvm use   
 
 ### Project setup 
+
+#### ember-quickstart
 1. Install ember-cli
    > npm install -g ember-cli   
 2. Create an ember app
@@ -19,7 +21,10 @@ You will need [nvm](https://github.com/creationix/nvm)
    > ember serve  
    Access http://localhost:4200/    
 5. Complete steps on each part of the app
-6. Start [in-depth tutorial](https://guides.emberjs.com/release/tutorial/ember-cli/)
+
+
+#### Super-rentals
+1. Start [in-depth tutorial](https://guides.emberjs.com/release/tutorial/ember-cli/)
    > ember new super-rentals  
-7. Remove nested git repo
+2. Remove nested git repo
    > rm -fR super-rentals/.git 
