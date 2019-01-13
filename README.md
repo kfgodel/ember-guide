@@ -14,3 +14,12 @@ You will need [nvm](https://github.com/creationix/nvm)
    > ember new ember-quickstart
 3. Remove the nested git repo created by ember-cli
    > rm -fR ember-quickstart/.git
+4. Test initial setup
+   > cd ember-quickstart  
+   > ember serve  
+   Access http://localhost:4200/    
+5. Complete steps on each part of the app
+6. Start [in-depth tutorial](https://guides.emberjs.com/release/tutorial/ember-cli/)
+   > ember new super-rentals  
+7. Remove nested git repo
+   > rm -fR super-rentals/.git 
