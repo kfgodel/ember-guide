@@ -28,3 +28,5 @@ You will need [nvm](https://github.com/creationix/nvm)
    > ember new super-rentals  
 2. Remove nested git repo
    > rm -fR super-rentals/.git 
+3. Complete tutorial steps
+   > cd super-rentals   
