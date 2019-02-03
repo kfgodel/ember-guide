@@ -1,7 +1,15 @@
+import Service from '@ember/service';
 import {module, test} from 'qunit';
 import {setupRenderingTest} from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import {click, render} from '@ember/test-helpers';
+import {resolve} from 'rsvp';
+
+let StubMapsService = Service.extend({
+  getMapElement() {
+    return resolve(document.createElement('div'));
+  }
+});
 
 module('Integration | Component | rental-listing', function(hooks) {
   setupRenderingTest(hooks);
@@ -15,6 +23,7 @@ module('Integration | Component | rental-listing', function(hooks) {
       city: 'test-city',
       bedrooms: 3
     };
+    this.owner.register('service:map-element', StubMapsService);
   });
 
   test('should display rental details', async function(assert) {
